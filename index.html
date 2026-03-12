@@ -1,15 +1,13 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AMP Solutions Argentina - Ingeniería y Servicios Industriales</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Fuente Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <!-- Iconos (FontAwesome CDN para demo) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -26,6 +24,7 @@
                     <li><a href="#nosotros">Nosotros</a></li>
                     <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#equipo">Equipo</a></li>
                     <li><a href="#contacto" class="btn-nav">Contacto</a></li>
                 </ul>
                 <div class="hamburger">
@@ -43,7 +42,7 @@
         <div class="container hero-content">
             <h1>AMP Solutions Argentina</h1>
             <p class="subtitle">Una solución para cada necesidad</p>
-            <p class="hero-text">Ingeniería, Construcción, Mantenimiento y Logística Industrial.</p>
+            <p class="hero-text">Ingeniería, Construcción, Mantenimiento, Ciberseguridad y Logística Industrial.</p>
             <div class="hero-buttons">
                 <a href="#servicios" class="btn btn-primary">Nuestros Servicios</a>
                 <a href="#contacto" class="btn btn-outline">Contáctanos</a>
@@ -61,15 +60,19 @@
             <div class="about-grid">
                 <div class="about-text">
                     <h3>Breve Introducción</h3>
-                    <p><strong>AMP – Solutions Argentina</strong> nació con la misión de brindar soluciones integrales a la industria, adaptándose constantemente a las necesidades del mercado.</p>
-                    <p>Nuestro objetivo es proveer servicios de consultoría de ingeniería en el sector <strong>Oil & Gas</strong>, abarcando construcción, precomisionado, comisionado y operación de planta.</p>
-                    <p>Asimismo, contamos con una división especializada en reformas y mantenimiento de locales comerciales, construcciones y montajes especiales, así como logística y abastecimiento de insumos industriales.</p>
+                    <p><strong>AMP – Solutions Argentina</strong> nació con el objetivo de ofrecer soluciones integrales y eficientes a la industria, adaptándose a las necesidades cambiantes del mercado. Nuestra misión es proporcionar servicios ágiles, confiables y con una respuesta profesional óptima ante cada desafío.</p>
+                    <p>Contamos con una sólida estructura organizacional, capaz de ofrecer soluciones en diversas áreas de la ingeniería. Nuestro directorio está compuesto por profesionales con amplia experiencia en áreas como construcción, montajes especiales y abastecimiento de servicios.</p>
+                    <p>Además, disponemos de un equipo multidisciplinario altamente capacitado, que nos permite brindar respuestas precisas y efectivas a las demandas de nuestros clientes.</p>
+                    <div class="propuesta-valor">
+                        <h4><i class="fa-solid fa-star"></i> Propuesta de Valor</h4>
+                        <p>Lo que nos distingue es la combinación de experiencia, profesionalismo y la capacidad de adaptarnos a proyectos de cualquier envergadura, proporcionando soluciones integrales, eficientes y personalizadas que agregan valor real a las empresas.</p>
+                    </div>
                 </div>
                 <div class="about-values">
                     <div class="value-card">
                         <i class="fa-solid fa-helmet-safety"></i>
                         <h4>Experiencia</h4>
-                        <p>Directorio conformado por profesionales con amplia trayectoria.</p>
+                        <p>Directorio conformado por profesionales con amplia trayectoria en la industria.</p>
                     </div>
                     <div class="value-card">
                         <i class="fa-solid fa-users-gear"></i>
@@ -79,126 +82,404 @@
                     <div class="value-card">
                         <i class="fa-solid fa-bolt"></i>
                         <h4>Eficiencia</h4>
-                        <p>Respuestas ágiles en un entorno exigente.</p>
+                        <p>Respuestas ágiles, confiables y profesionales.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h4>Adaptabilidad</h4>
+                        <p>Soluciones personalizadas para proyectos de cualquier envergadura.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Areas de Negocio (Overview) -->
-    <section class="business-areas-banner">
-        <div class="container">
-            <h3>Nuestras Divisiones</h3>
-            <div class="areas-grid">
-                <div class="area-item">AMP – Engineering</div>
-                <div class="area-item">AMP – Retail Services</div>
-                <div class="area-item">AMP – Special Constructions</div>
-                <div class="area-item">AMP – Industrial Supplies</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Servicios Detallados -->
-    <section id="servicios" class="section bg-light">
+    <!-- Services Showcase -->
+    <section id="servicios" class="services-showcase">
         <div class="container">
             <div class="section-header">
-                <h2>Áreas de Servicios</h2>
+                <h2>Nuestras Divisiones</h2>
                 <div class="line-gradient"></div>
-                <p>Nuestra estructura de negocio nos permite ofrecer múltiples servicios con gerencias autónomas.</p>
+                <p>Gerencias especializadas con autonomía en cada área, garantizando un enfoque integral y eficiente en todas nuestras operaciones.</p>
             </div>
-
-            <!-- Engineering -->
-            <div class="service-block">
-                <div class="service-icon engineer-gradient"><i class="fa-solid fa-compass-drafting"></i></div>
-                <div class="service-content">
-                    <h3>AMP – Engineering</h3>
-                    <p>Liderada por profesionales de reconocida trayectoria, brinda servicios de estudio, factibilidad técnica, ingeniería básica “for bidding” e ingeniería ejecutiva “for construction”.</p>
-                    
-                    <div class="service-lists">
-                        <ul>
-                            <li><strong>Disciplinas:</strong> Civil, Mecánica (piping), Electromecánica, Safety (PCI-NFPA), Instrumentación y Control, HSE.</li>
-                            <li><strong>Relevamiento:</strong> Topografía con equipos de última tecnología.</li>
-                            <li><strong>Servicios:</strong> Inspección de obras, Estudios y proyectos, Ingeniería de campo.</li>
-                        </ul>
+            <div class="services-cards-grid">
+                <a href="#engineering" class="service-hero-card">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80" alt="Ingeniería">
+                    <div class="service-card-overlay"></div>
+                    <div class="service-card-content">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                        <h3>Engineering</h3>
+                        <p>Ingeniería de alta complejidad y proyectos industriales</p>
+                        <span class="btn btn-outline btn-sm">Conocer Más</span>
                     </div>
-                    <p class="service-industries"><strong>Industrias:</strong> Oil & Gas, Alimenticia, Metalúrgica, Logística, Energética, Saneamiento.</p>
-                </div>
-            </div>
-
-            <!-- Retail -->
-            <div class="service-block reverse">
-                <div class="service-icon retail-gradient"><i class="fa-solid fa-store"></i></div>
-                <div class="service-content">
-                    <h3>AMP – Retail Services</h3>
-                    <p>Gerencia especializada en mantenimiento, obras de construcción y mejoras para cadenas y redes de locales minoristas.</p>
-                    <div class="two-col-list">
-                        <ul>
-                            <li>Electricidad conv. y renovable</li>
-                            <li>Construcción en seco y húmeda</li>
-                            <li>Aire acondicionado</li>
-                            <li>Marquesinas y cartelería</li>
-                            <li>Pintura</li>
-                        </ul>
-                        <ul>
-                            <li>CCTV, alarmas y control de accesos</li>
-                            <li>Sistemas contra incendios</li>
-                            <li>Ingeniería y fibra óptica</li>
-                            <li>Soldadura MIG–TIG</li>
-                        </ul>
+                </a>
+                <a href="#retail" class="service-hero-card">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80" alt="Retail">
+                    <div class="service-card-overlay"></div>
+                    <div class="service-card-content">
+                        <i class="fa-solid fa-store"></i>
+                        <h3>Retail Services</h3>
+                        <p>Mantenimiento y remodelación integral de locales</p>
+                        <span class="btn btn-outline btn-sm">Conocer Más</span>
                     </div>
-                    <p class="highlight-text">Personal capacitado para trabajar en horarios nocturnos o contraturnos, sin interferir en la rutina comercial.</p>
-                </div>
-            </div>
-
-            <!-- Special Constructions -->
-            <div class="service-block">
-                <div class="service-icon construction-gradient"><i class="fa-solid fa-industry"></i></div>
-                <div class="service-content">
-                    <h3>AMP – Special Constructions</h3>
-                    <p>Proyectos de construcciones especiales bajo requerimientos EPC (Engineering, Procurement and Construction).</p>
-                    
-                    <h4>Servicios EPC y Dirección de Obra</h4>
-                    <ul class="grid-list">
-                        <li>Ingeniería Básica y de Detalle</li>
-                        <li>Plantas Oil & Gas / Automotrices / Tabacaleras</li>
-                        <li>Provisión de Personal de dirección de Obra</li>
-                        <li>Supervisores mecánicos, civiles y HSE</li>
-                    </ul>
-
-                    <div class="methodology-box">
-                        <h4>Metodología Documental</h4>
-                        <p>Memorias de Cálculo, P&ID, Lay-out 2D/3D, Planificación, Calidad (QA/QC), Precomisioning y Test Pack.</p>
+                </a>
+                <a href="#special-construction" class="service-hero-card">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80" alt="Construcción">
+                    <div class="service-card-overlay"></div>
+                    <div class="service-card-content">
+                        <i class="fa-solid fa-industry"></i>
+                        <h3>Special Construction</h3>
+                        <p>Construcciones especiales y proyectos EPC</p>
+                        <span class="btn btn-outline btn-sm">Conocer Más</span>
                     </div>
-                </div>
+                </a>
+                <a href="#industrial-supplies" class="service-hero-card">
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80" alt="Suministros">
+                    <div class="service-card-overlay"></div>
+                    <div class="service-card-content">
+                        <i class="fa-solid fa-boxes-packing"></i>
+                        <h3>Industrial Supplies</h3>
+                        <p>Logística y abastecimiento industrial</p>
+                        <span class="btn btn-outline btn-sm">Conocer Más</span>
+                    </div>
+                </a>
+                <a href="#cybersecurity" class="service-hero-card service-hero-card-wide">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80" alt="Ciberseguridad">
+                    <div class="service-card-overlay"></div>
+                    <div class="service-card-content">
+                        <i class="fa-solid fa-lock"></i>
+                        <h3>Cybersecurity &amp; Risk Management</h3>
+                        <p>Seguridad digital, auditorías y gestión de riesgos</p>
+                        <span class="btn btn-outline btn-sm">Conocer Más</span>
+                    </div>
+                </a>
             </div>
-
-            <!-- Industrial Supplies -->
-            <div class="service-block reverse">
-                <div class="service-icon supplies-gradient"><i class="fa-solid fa-boxes-packing"></i></div>
-                <div class="service-content">
-                    <h3>AMP – Industrial Supplies</h3>
-                    <p>Integración entre las provisiones de insumos y equipamiento, con una gerencia de logística eficiente.</p>
-                    <ul>
-                        <li>Equipo de ropa de trabajo y EPP.</li>
-                        <li>Equipo especial de EPP.</li>
-                        <li>Insumos metalúrgicos (consumibles).</li>
-                        <li>Desarrollo de proveedores regionales.</li>
-                    </ul>
-                </div>
-            </div>
-
         </div>
     </section>
 
-    <!-- Proyectos y Clientes -->
+    <!-- ===================== SERVICE DETAIL SECTIONS ===================== -->
+
+    <!-- Engineering Detail -->
+    <section id="engineering" class="service-detail-section">
+        <div class="service-hero-banner" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1920&q=80')">
+            <div class="service-hero-overlay engineer-overlay"></div>
+            <div class="container service-hero-text">
+                <span class="service-label">AMP Solutions</span>
+                <h2>Engineering</h2>
+                <p>Soluciones técnicas de alta calidad a través de estudios de factibilidad, ingeniería básica e ingeniería ejecutiva.</p>
+                <a href="#contacto" class="btn btn-outline">Solicitar Presupuesto</a>
+            </div>
+        </div>
+        <div class="container service-detail-content">
+            <div class="service-intro-grid">
+                <div class="service-intro-text">
+                    <h3>Equipo Multidisciplinario de Ingeniería</h3>
+                    <p>Está liderado por un equipo de profesionales con amplia experiencia en ingeniería, y tiene como objetivo brindar soluciones técnicas de alta calidad a través de estudios de factibilidad, ingeniería básica "for bidding" e ingeniería ejecutiva "for construction".</p>
+                    <div class="two-col-list">
+                        <ul>
+                            <li>Obra Civil</li>
+                            <li>Mecánica (piping)</li>
+                            <li>Electromecánica (equipamientos)</li>
+                            <li>Obra Eléctrica</li>
+                            <li>Obra Industrial</li>
+                            <li>Topografía avanzada</li>
+                        </ul>
+                        <ul>
+                            <li>Geo detección y geolocalización</li>
+                            <li>Safety (PCI – NFPA – F&amp;G)</li>
+                            <li>Instrumentación y control</li>
+                            <li>HSE para diversas industrias</li>
+                            <li>Calidad (QA/QC)</li>
+                            <li>Personal de Pre-commissioning</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-intro-image">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=600&q=80" alt="Equipo de ingeniería">
+                </div>
+            </div>
+            <div class="service-features-grid">
+                <div class="service-feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-wrench"></i></div>
+                    <h4>Servicios Principales</h4>
+                    <ul class="service-list-styled">
+                        <li>Servicios de inspección de obras</li>
+                        <li>Servicios de estudios y proyectos</li>
+                        <li>Servicios de ingeniería de campo</li>
+                        <li>Dirección de obra y gestión de equipos</li>
+                    </ul>
+                </div>
+                <div class="service-feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h4>Tecnología y Herramientas</h4>
+                    <ul class="service-list-styled">
+                        <li>Autocad 2D &amp; 3D</li>
+                        <li>CADWORX (modelización)</li>
+                        <li>Maquetas digitales (Lumion / Gamma AR)</li>
+                        <li>Equipos de geo-radarización</li>
+                    </ul>
+                </div>
+                <div class="service-feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-building"></i></div>
+                    <h4>Industrias</h4>
+                    <div class="tags-inline">
+                        <span class="industry-tag">Oil &amp; Gas</span>
+                        <span class="industry-tag">Alimenticia</span>
+                        <span class="industry-tag">Metalúrgica</span>
+                        <span class="industry-tag">Centros logísticos</span>
+                        <span class="industry-tag">Energéticas</span>
+                        <span class="industry-tag">Distribuidoras de agua</span>
+                    </div>
+                </div>
+            </div>
+            <div class="methodology-box">
+                <h4>Beneficios para nuestros clientes</h4>
+                <ul class="benefit-list">
+                    <li><i class="fa-solid fa-check"></i> Reducción de tiempos de implementación</li>
+                    <li><i class="fa-solid fa-check"></i> Optimización de recursos en cada etapa del proyecto</li>
+                    <li><i class="fa-solid fa-check"></i> Soluciones personalizadas que se ajustan a cada necesidad</li>
+                    <li><i class="fa-solid fa-check"></i> Uso de tecnología avanzada para mejorar la visualización y precisión</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Retail Detail -->
+    <section id="retail" class="service-detail-section">
+        <div class="service-hero-banner" style="background-image: url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1920&q=80')">
+            <div class="service-hero-overlay retail-overlay"></div>
+            <div class="container service-hero-text">
+                <span class="service-label">AMP Solutions</span>
+                <h2>Retail Services</h2>
+                <p>Servicio integral para mantenimiento y remodelación de locales comerciales, residenciales e industriales.</p>
+                <a href="#contacto" class="btn btn-outline">Solicitar Presupuesto</a>
+            </div>
+        </div>
+        <div class="container service-detail-content">
+            <div class="service-intro-grid reverse-grid">
+                <div class="service-intro-image">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80" alt="Local comercial">
+                </div>
+                <div class="service-intro-text">
+                    <h3>Mantenimiento Integral Multi-rubro</h3>
+                    <p>Ofrecemos un servicio integral para el mantenimiento y remodelación de locales comerciales, residenciales o industriales. Nos especializamos en proyectos para redes multi-rubro, garantizando el correcto funcionamiento y la seguridad de cada espacio.</p>
+                    <p class="highlight-text"><i class="fa-solid fa-clock"></i> Ofrecemos trabajos nocturnos o a contraturno, adaptándonos a las necesidades de su local, sin afectar la atención al público ni las operaciones comerciales.</p>
+                </div>
+            </div>
+            <div class="service-features-grid service-features-grid-2">
+                <div class="service-feature-card">
+                    <div class="feature-icon retail-icon"><i class="fa-solid fa-plug"></i></div>
+                    <h4>Eléctrica</h4>
+                    <ul class="service-list-styled">
+                        <li>Electricidad convencional y energía renovable</li>
+                        <li>Montaje eléctrico e instrumentación</li>
+                        <li>Obras eléctricas industriales</li>
+                        <li>Ruteo de cables de potencia y control</li>
+                        <li>Reformas de tableros y sistemas eléctricos</li>
+                        <li>Automatización de procesos industriales</li>
+                    </ul>
+                </div>
+                <div class="service-feature-card">
+                    <div class="feature-icon retail-icon"><i class="fa-solid fa-faucet-drip"></i></div>
+                    <h4>Plomería y Gas</h4>
+                    <ul class="service-list-styled">
+                        <li>Instalación y reparación de cañerías</li>
+                        <li>Service y mantenimiento general</li>
+                        <li>Solución de filtraciones y cañerías dañadas</li>
+                        <li>Instalaciones y conexiones a la red de gas</li>
+                        <li>Plantas reguladoras y medidores de gas</li>
+                        <li>Elaboración de planos y gestión de trámites</li>
+                    </ul>
+                </div>
+                <div class="service-feature-card">
+                    <div class="feature-icon retail-icon"><i class="fa-solid fa-paint-roller"></i></div>
+                    <h4>Construcción y Pintura</h4>
+                    <ul class="service-list-styled">
+                        <li>Construcción en seco y tradicional</li>
+                        <li>Estructura para cartelería en espacios públicos</li>
+                        <li>Refacciones integrales de locales y edificios</li>
+                        <li>Impermeabilización de cubiertas y terrazas</li>
+                        <li>Pintura interior/exterior (látex, esmaltes)</li>
+                        <li>Tratamientos según tipo de material</li>
+                    </ul>
+                </div>
+                <div class="service-feature-card">
+                    <div class="feature-icon retail-icon"><i class="fa-solid fa-snowflake"></i></div>
+                    <h4>Climatización</h4>
+                    <ul class="service-list-styled">
+                        <li>Diagnóstico, reparación e instalación (Split, Multisplit, Rooftop, VRV/VRF)</li>
+                        <li>Mantenimiento: limpieza y recambio de componentes</li>
+                        <li>Automatismos analógicos y digitales</li>
+                        <li>Servicio técnico en chillers y frio industrial</li>
+                    </ul>
+                </div>
+                <div class="service-feature-card">
+                    <div class="feature-icon retail-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h4>Seguridad y Prevención</h4>
+                    <ul class="service-list-styled">
+                        <li>Sistemas de control de acceso, CCTV, alarmas</li>
+                        <li>Sistemas contra incendios (Honeywell, Notifier, Siemens, Edwards)</li>
+                        <li>Redes de fibra óptica</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Construction Detail -->
+    <section id="special-construction" class="service-detail-section">
+        <div class="service-hero-banner" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1920&q=80')">
+            <div class="service-hero-overlay construction-overlay"></div>
+            <div class="container service-hero-text">
+                <span class="service-label">AMP Solutions</span>
+                <h2>Special Construction</h2>
+                <p>Construcciones especiales bajo el modelo EPC, garantizando la entrega de proyectos completos llave en mano.</p>
+                <a href="#contacto" class="btn btn-outline">Solicitar Presupuesto</a>
+            </div>
+        </div>
+        <div class="container service-detail-content">
+            <div class="service-intro-grid">
+                <div class="service-intro-text">
+                    <h3>Proyectos EPC – Llave en Mano</h3>
+                    <p>Nuestra Gerencia está especializada en la provisión de servicios para construcciones especiales. Contamos con un equipo propio altamente capacitado para dirigir y ejecutar obras en diversas industrias.</p>
+                    <p>Ofrecemos la capacidad para gestionar proyectos de construcción bajo los requisitos del modelo <strong>EPC (Engineering, Procurement, and Construction)</strong>, asegurando la entrega de proyectos completos llave en mano y de alta calidad.</p>
+                </div>
+                <div class="service-intro-image">
+                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80" alt="Construcción especial">
+                </div>
+            </div>
+            <div class="epc-steps">
+                <div class="epc-step">
+                    <div class="epc-step-number">01</div>
+                    <h4>Engineering</h4>
+                    <p>Diseño e ingeniería completa del proyecto con tecnología de vanguardia.</p>
+                </div>
+                <div class="epc-step">
+                    <div class="epc-step-number">02</div>
+                    <h4>Procurement</h4>
+                    <p>Gestión integral de compras, logística y cadena de suministro.</p>
+                </div>
+                <div class="epc-step">
+                    <div class="epc-step-number">03</div>
+                    <h4>Construction</h4>
+                    <p>Ejecución y supervisión de obra con los más altos estándares de calidad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industrial Supplies Detail -->
+    <section id="industrial-supplies" class="service-detail-section">
+        <div class="service-hero-banner" style="background-image: url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1920&q=80')">
+            <div class="service-hero-overlay supplies-overlay"></div>
+            <div class="container service-hero-text">
+                <span class="service-label">AMP Solutions</span>
+                <h2>Industrial Supplies</h2>
+                <p>Integración eficiente entre provisiones de insumos, equipamiento y logística.</p>
+                <a href="#contacto" class="btn btn-outline">Solicitar Presupuesto</a>
+            </div>
+        </div>
+        <div class="container service-detail-content">
+            <div class="service-intro-grid reverse-grid">
+                <div class="service-intro-image">
+                    <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=600&q=80" alt="Logística industrial">
+                </div>
+                <div class="service-intro-text">
+                    <h3>Logística y Abastecimiento Eficiente</h3>
+                    <p>Esta área nació con el fin de brindar una integración entre las provisiones de insumos y equipamiento de la industria, con una gerencia de logística y abastecimiento eficiente. Reúne todas las condiciones que requiere una provisión desde su concepción hasta la entrega al pie del requerimiento.</p>
+                </div>
+            </div>
+            <div class="supplies-items-grid">
+                <div class="supply-item">
+                    <i class="fa-solid fa-vest"></i>
+                    <h4>Ropa de trabajo y EPP</h4>
+                    <p>Equipamiento estándar de protección personal para toda la industria.</p>
+                </div>
+                <div class="supply-item">
+                    <i class="fa-solid fa-helmet-safety"></i>
+                    <h4>EPP Especial</h4>
+                    <p>Equipamiento especializado para entornos de alto riesgo.</p>
+                </div>
+                <div class="supply-item">
+                    <i class="fa-solid fa-gears"></i>
+                    <h4>Insumos Metalúrgicos</h4>
+                    <p>Consumibles e insumos para la industria metalúrgica.</p>
+                </div>
+                <div class="supply-item">
+                    <i class="fa-solid fa-handshake"></i>
+                    <h4>Proveedores Regionales</h4>
+                    <p>Desarrollo y gestión de proveedores regionales estratégicos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cybersecurity Detail -->
+    <section id="cybersecurity" class="service-detail-section">
+        <div class="service-hero-banner" style="background-image: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1920&q=80')">
+            <div class="service-hero-overlay cyber-overlay"></div>
+            <div class="container service-hero-text">
+                <span class="service-label">AMP Solutions</span>
+                <h2>Cybersecurity &amp; Risk Management</h2>
+                <p>Tecnología, infraestructura y seguridad digital bajo una misma visión estratégica.</p>
+                <a href="#contacto" class="btn btn-outline">Solicitar Presupuesto</a>
+            </div>
+        </div>
+        <div class="container service-detail-content">
+            <div class="service-intro-grid">
+                <div class="service-intro-text">
+                    <h3>Seguridad Digital Integral</h3>
+                    <p>AMP Solutions integra tecnología, infraestructura y seguridad digital bajo una misma visión estratégica. La dirección técnica cuenta con formación de posgrado en Ciberseguridad y experiencia en auditorías basadas en estándares internacionales como <strong>ISO 27001</strong> (Gestión de Seguridad de la Información) e <strong>ISO 22301</strong> (Continuidad del Negocio).</p>
+                    <p>En un contexto donde la infraestructura tecnológica y energética está cada vez más conectada, integrar seguridad, continuidad operativa y gestión de riesgos desde el diseño es una ventaja competitiva para nuestros clientes.</p>
+                </div>
+                <div class="service-intro-image">
+                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f2?auto=format&fit=crop&w=600&q=80" alt="Análisis de riesgos ciberseguridad">
+                </div>
+            </div>
+            <div class="cyber-benefits-grid">
+                <div class="cyber-benefit">
+                    <i class="fa-solid fa-shield-virus"></i>
+                    <h4>Reducir Riesgos</h4>
+                    <p>Identificación y mitigación de riesgos tecnológicos y operativos.</p>
+                </div>
+                <div class="cyber-benefit">
+                    <i class="fa-solid fa-database"></i>
+                    <h4>Proteger Información</h4>
+                    <p>Protección de información crítica y activos digitales.</p>
+                </div>
+                <div class="cyber-benefit">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    <h4>Continuidad Operativa</h4>
+                    <p>Garantía de continuidad operativa ante incidentes.</p>
+                </div>
+                <div class="cyber-benefit">
+                    <i class="fa-solid fa-certificate"></i>
+                    <h4>Estándares Internacionales</h4>
+                    <p>Soluciones alineadas con ISO 27001 e ISO 22301.</p>
+                </div>
+            </div>
+            <div class="cyber-quote">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>En un entorno donde la tecnología, la energía y los sistemas de información convergen, la seguridad ya no es opcional: es parte del diseño.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos Destacados -->
     <section id="proyectos" class="section dark-blue-bg text-white">
         <div class="container">
             <div class="section-header">
-                <h2>Experiencia y Proyectos</h2>
-                 <div class="line-gradient"></div>
+                <h2>Proyectos Destacados</h2>
+                <div class="line-gradient"></div>
             </div>
-            
+
+            <div id="proyectos-container">
+                <div class="loading-projects">
+                    <i class="fa-solid fa-spinner fa-spin"></i>
+                    <p>Cargando proyectos...</p>
+                </div>
+            </div>
+
             <div class="clients-logos">
                 <p>Nuestro equipo ha prestado servicios a empresas como:</p>
                 <div class="logos-grid">
@@ -207,20 +488,81 @@
                     <span class="client-name">YPF S.A.</span>
                     <span class="client-name">PAE</span>
                     <span class="client-name">Tecpetrol</span>
-                    <span class="client-name">Techint E&C</span>
+                    <span class="client-name">Techint E&amp;C</span>
+                    <span class="client-name">Farmacity</span>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="projects-highlight">
-                <div class="project-card">
-                    <h4>CPF La Calera</h4>
-                    <p>Oficina Técnica, consultoría externa y resolución de desvíos in-situ.</p>
-                    <span class="tag">Pluspetrol S.A.</span>
+    <!-- Equipo / Staff -->
+    <section id="equipo" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestro Equipo</h2>
+                <div class="line-gradient"></div>
+                <p>Profesionales comprometidos con la excelencia en cada proyecto.</p>
+            </div>
+            <div class="staff-grid">
+                <div class="staff-card staff-director">
+                    <div class="staff-icon"><i class="fa-solid fa-user-tie"></i></div>
+                    <h4>Claudio L. Panderi</h4>
+                    <span class="staff-role">Presidente – CEO</span>
                 </div>
-                <div class="project-card">
-                    <h4>Plant Side Wind Farm</h4>
-                    <p>Gerenciamiento de obra, Calidad, Precomisioning y Puesta en marcha.</p>
-                    <span class="tag">Total Energies</span>
+                <div class="staff-card staff-director">
+                    <div class="staff-icon"><i class="fa-solid fa-user-tie"></i></div>
+                    <h4>María F. Luque</h4>
+                    <span class="staff-role">Directora – COO</span>
+                </div>
+                <div class="staff-card staff-director">
+                    <div class="staff-icon"><i class="fa-solid fa-hard-hat"></i></div>
+                    <h4>Ing. Edgardo J. Ibañez</h4>
+                    <span class="staff-role">Director de Operaciones</span>
+                </div>
+                <div class="staff-card">
+                    <div class="staff-icon"><i class="fa-solid fa-calculator"></i></div>
+                    <h4>María E. Re</h4>
+                    <span class="staff-role">Directora de Administración</span>
+                </div>
+                <div class="staff-card">
+                    <div class="staff-icon"><i class="fa-solid fa-drafting-compass"></i></div>
+                    <h4>Arq. Federico Greco</h4>
+                    <span class="staff-role">Arquitectura y Construcciones Especiales</span>
+                </div>
+                <div class="staff-card">
+                    <div class="staff-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <h4>Ing. José Nocera</h4>
+                    <span class="staff-role">Gerente Obras Eléctricas</span>
+                </div>
+                <div class="staff-card">
+                    <div class="staff-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                    <h4>Dr. Alejandro M. Re</h4>
+                    <span class="staff-role">Asesor Legal</span>
+                </div>
+                <div class="staff-card">
+                    <div class="staff-icon"><i class="fa-solid fa-vest"></i></div>
+                    <h4>Lic. Marcelo Cuyumil</h4>
+                    <span class="staff-role">HSE</span>
+                </div>
+                <div class="staff-card">
+                    <div class="staff-icon"><i class="fa-solid fa-shield-virus"></i></div>
+                    <h4>Maximiliano Zanuttini</h4>
+                    <span class="staff-role">TI / Ciberseguridad</span>
+                </div>
+                <div class="staff-card">
+                    <div class="staff-icon"><i class="fa-solid fa-clipboard-check"></i></div>
+                    <h4>Fernando Tocua</h4>
+                    <span class="staff-role">QA / CA</span>
+                </div>
+                <div class="staff-card">
+                    <div class="staff-icon"><i class="fa-solid fa-fire-extinguisher"></i></div>
+                    <h4>Tec. Daniel Alvarez</h4>
+                    <span class="staff-role">F&amp;G – Mecánica</span>
+                </div>
+                <div class="staff-card">
+                    <div class="staff-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                    <h4>Lic. Tomás Ibañez</h4>
+                    <span class="staff-role">Community Manager</span>
                 </div>
             </div>
         </div>
@@ -229,43 +571,35 @@
     <!-- Contacto -->
     <section id="contacto" class="section contact-section">
         <div class="container">
+            <div class="section-header">
+                <h2>Contacto</h2>
+                <div class="line-gradient"></div>
+            </div>
             <div class="contact-grid">
                 <div class="contact-info">
-                    <h2>Contacto</h2>
-                    <p>Estamos listos para brindar la solución que su empresa necesita.</p>
-                    
+                    <p class="contact-intro">Estamos listos para brindar la solución que su empresa necesita.</p>
                     <div class="contact-item">
-                        <i class="fa-solid fa-location-dot"></i>
+                        <i class="fa-solid fa-briefcase"></i>
                         <div>
-                            <h5>Dirección</h5>
-                            <p>Rep. Árabe Siria 3220, Palermo - CABA</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <i class="fa-solid fa-envelope"></i>
-                        <div>
-                            <h5>Email</h5>
+                            <h5>Contacto Comercial</h5>
                             <a href="mailto:info@ampsolutionsar.com">info@ampsolutionsar.com</a>
+                            <p><i class="fa-solid fa-phone"></i> +54 (11) 2274-0889</p>
                         </div>
                     </div>
-
                     <div class="contact-item">
-                        <i class="fa-solid fa-phone"></i>
+                        <i class="fa-solid fa-helmet-safety"></i>
                         <div>
-                            <h5>Teléfonos</h5>
-                            <p>+54 (11) 2274-0889</p>
-                            <p>+54 (11) 3580-9413</p>
+                            <h5>Contacto Técnico</h5>
+                            <a href="mailto:eibanez@ampsolutionsar.com">eibanez@ampsolutionsar.com</a>
+                            <p><i class="fa-solid fa-phone"></i> +54 (11) 3580-9413</p>
                         </div>
                     </div>
-
                     <div class="website-link">
-                         <a href="http://www.ampsolutionsar.com" target="_blank">www.ampsolutionsar.com</a>
+                        <a href="http://www.ampsolutionsar.com" target="_blank"><i class="fa-solid fa-globe"></i> www.ampsolutionsar.com</a>
                     </div>
                 </div>
-                
                 <div class="contact-form-wrapper">
-                    <form class="contact-form">
+                    <form class="contact-form" id="contact-form">
                         <input type="text" placeholder="Nombre" required>
                         <input type="email" placeholder="Email" required>
                         <input type="text" placeholder="Asunto">
@@ -285,6 +619,11 @@
         </div>
     </footer>
 
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-storage-compat.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
+

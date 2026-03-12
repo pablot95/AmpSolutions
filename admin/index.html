@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMP Solutions - Panel de Administración</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Login Screen -->
+    <div id="login-screen" class="login-screen">
+        <div class="login-card">
+            <img src="../images/logo.jpeg" alt="AMP Solutions" class="login-logo">
+            <h2>Panel de Administración</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-user">Usuario</label>
+                    <input type="text" id="login-user" placeholder="Usuario" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Contraseña</label>
+                    <input type="password" id="login-password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn-login">Iniciar Sesión</button>
+                <p id="login-error" class="login-error"></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Admin Panel -->
+    <div id="admin-panel" class="admin-panel" style="display:none;">
+        
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="../images/logo.jpeg" alt="AMP Solutions" class="sidebar-logo">
+                <h3>Admin Panel</h3>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active" data-section="proyectos">
+                    <i class="fa-solid fa-diagram-project"></i> Proyectos Destacados
+                </a>
+                <a href="#" class="nav-item" data-section="imagenes">
+                    <i class="fa-solid fa-images"></i> Galería de Imágenes
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <button id="btn-logout" class="btn-logout">
+                    <i class="fa-solid fa-right-from-bracket"></i> Cerrar Sesión
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="admin-main">
+            
+            <!-- Header -->
+            <header class="admin-header">
+                <div class="admin-header-left">
+                    <button id="sidebar-toggle" class="sidebar-toggle">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <h1 id="section-title">Proyectos Destacados</h1>
+                </div>
+                <div class="admin-header-right">
+                    <span id="admin-user-email" class="admin-user"></span>
+                </div>
+            </header>
+
+            <!-- Section: Proyectos -->
+            <section id="section-proyectos" class="admin-section active">
+                <div class="section-toolbar">
+                    <h2>Gestión de Proyectos</h2>
+                    <div class="toolbar-buttons">
+                        <button id="btn-seed-projects" class="btn btn-secondary" title="Cargar los 3 proyectos iniciales en Firebase">
+                            <i class="fa-solid fa-database"></i> Cargar Datos Iniciales
+                        </button>
+                        <button id="btn-add-project" class="btn btn-primary">
+                            <i class="fa-solid fa-plus"></i> Nuevo Proyecto
+                        </button>
+                    </div>
+                </div>
+                <div id="projects-list" class="cards-grid">
+                    <!-- Projects loaded dynamically -->
+                </div>
+            </section>
+
+            <!-- Section: Imagenes -->
+            <section id="section-imagenes" class="admin-section">
+                <div class="section-toolbar">
+                    <h2>Galería de Imágenes</h2>
+                    <button id="btn-upload-image" class="btn btn-primary">
+                        <i class="fa-solid fa-upload"></i> Subir Imagen
+                    </button>
+                </div>
+                <input type="file" id="image-upload-input" accept="image/*" style="display:none;" multiple>
+                <div id="images-list" class="images-grid">
+                    <!-- Images loaded dynamically -->
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Modal: Proyecto -->
+    <div id="project-modal" class="modal-overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 id="modal-title">Nuevo Proyecto</h3>
+                <button class="modal-close" data-close="project-modal">&times;</button>
+            </div>
+            <form id="project-form" class="modal-body">
+                <input type="hidden" id="project-id">
+                
+                <div class="form-group">
+                    <label for="project-titulo">Título del Proyecto</label>
+                    <input type="text" id="project-titulo" required placeholder="Ej: CPF La Calera - Neuquén">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="project-badge">Badge / Ubicación</label>
+                        <input type="text" id="project-badge" placeholder="Ej: Cuenca Vaca Muerta">
+                    </div>
+                    <div class="form-group">
+                        <label for="project-orden">Orden</label>
+                        <input type="number" id="project-orden" value="0" min="0">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="project-descripcion">Descripción</label>
+                    <textarea id="project-descripcion" rows="4" placeholder="Descripción del proyecto..."></textarea>
+                </div>
+
+                <!-- Meta Info (dinámico) -->
+                <div class="form-group">
+                    <label>Información del Proyecto (Metadatos)</label>
+                    <div id="meta-fields" class="dynamic-fields">
+                        <!-- Dynamic meta fields -->
+                    </div>
+                    <button type="button" id="btn-add-meta" class="btn btn-small btn-secondary">
+                        <i class="fa-solid fa-plus"></i> Agregar campo
+                    </button>
+                </div>
+
+                <!-- Specs Tags -->
+                <div class="form-group">
+                    <label for="project-specs">Especificaciones / Tags (separadas por coma)</label>
+                    <input type="text" id="project-specs" placeholder="Norma NFPA, +25 km tuberías, ...">
+                </div>
+
+                <!-- Images -->
+                <div class="form-group">
+                    <label>Imágenes del Proyecto</label>
+                    <div id="project-images-preview" class="images-preview"></div>
+                    <input type="file" id="project-images-input" accept="image/*" multiple>
+                    <p class="form-hint">Seleccione las imágenes para este proyecto. También puede usar URLs de imágenes ya subidas.</p>
+                    <div id="project-image-urls" class="dynamic-fields">
+                        <!-- Dynamic URL fields -->
+                    </div>
+                    <button type="button" id="btn-add-image-url" class="btn btn-small btn-secondary">
+                        <i class="fa-solid fa-link"></i> Agregar URL de imagen
+                    </button>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-cancel" data-close="project-modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Guardar Proyecto</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal: Confirmar Eliminación -->
+    <div id="delete-modal" class="modal-overlay">
+        <div class="modal modal-small">
+            <div class="modal-header">
+                <h3>Confirmar Eliminación</h3>
+                <button class="modal-close" data-close="delete-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>¿Está seguro de que desea eliminar este elemento? Esta acción no se puede deshacer.</p>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-cancel" data-close="delete-modal">Cancelar</button>
+                    <button type="button" id="btn-confirm-delete" class="btn btn-danger">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-storage-compat.js"></script>
+    <script src="admin.js?v=2"></script>
+</body>
+</html>
