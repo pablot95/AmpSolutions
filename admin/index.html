@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AMP Solutions - Panel de Administración</title>
-    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="../admin/admin.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
@@ -77,9 +77,6 @@
                 <div class="section-toolbar">
                     <h2>Gestión de Proyectos</h2>
                     <div class="toolbar-buttons">
-                        <button id="btn-seed-projects" class="btn btn-secondary" title="Cargar los 3 proyectos iniciales en Firebase">
-                            <i class="fa-solid fa-database"></i> Cargar Datos Iniciales
-                        </button>
                         <button id="btn-add-project" class="btn btn-primary">
                             <i class="fa-solid fa-plus"></i> Nuevo Proyecto
                         </button>
@@ -164,9 +161,6 @@
                     <div id="project-image-urls" class="dynamic-fields">
                         <!-- Dynamic URL fields -->
                     </div>
-                    <button type="button" id="btn-add-image-url" class="btn btn-small btn-secondary">
-                        <i class="fa-solid fa-link"></i> Agregar URL de imagen
-                    </button>
                 </div>
 
                 <div class="modal-footer">
@@ -201,6 +195,6 @@
     <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-storage-compat.js"></script>
-    <script src="admin.js?v=2"></script>
+    <script src="../admin/admin.js"></script>
 </body>
 </html>
